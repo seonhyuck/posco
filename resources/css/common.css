@@ -1,0 +1,119 @@
+body{
+  font-family: 'Nanum Gothic',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+}
+
+header {
+  z-index: 1000;
+  background-color: rgb(250,250,250);
+  border-bottom: rgb(230, 230, 230) solid 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+main{
+  margin-top: 81px;
+}
+header .clearfix{
+  background-color: rgb(250,250,250);
+  width: 1140px;
+  height: 80px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+header .main{
+  position: relative;
+  width: 1140px;
+  height: 80px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+header .clearfix .main .logo{
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+}
+
+header .main .main-menu{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 200px;
+  top: 0;
+  right: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+header .main ul.main-menu li.item{
+  width: 188px;
+}
+
+header .main ul.main-menu .item__name{
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  padding: 14px 0px;
+  font-family: 'Noto Sans KR', 'sans-serif', 'Apple SD Gothic Neo', 'malgun gothic', '맑은 고딕', '돋움', 'dotum';
+}
+
+header .main div.language{
+  width: 194px;
+  height: 50px;
+  background-image: url("../images/main/leng_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 16px;
+
+
+}
+header .main .main-menu .item:hover .item__name{
+  color: rgb(2, 38, 88);
+  font-weight: 900;
+}
+
+#header .main .main-menu .item .item__contents{
+  display: none;
+  background-color: orange;
+  width: 1170px;
+  height: 200px;
+  position: absolute;
+  left: -230px;
+  top: 65px;
+  
+}
+#header .main .main-menu .item:hover .item__contents{
+  display: block;
+}
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
