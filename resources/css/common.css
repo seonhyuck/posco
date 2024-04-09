@@ -1,9 +1,19 @@
 body{
-  font-family: 'Nanum Gothic',sans-serif;
+  
+  font-family: 'Noto Sans KR', 'sans-serif', 'Apple SD Gothic Neo', 'malgun gothic', '맑은 고딕', '돋움', 'dotum';
+
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: #333;
+}
+ul{
+  list-style-type: none;
+}
+ul,li {margin:0; padding:0;}
+a{
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -16,7 +26,7 @@ header {
   right: 0;
 }
 main{
-  margin-top: 81px;
+  margin-top: 80px;
 }
 header .clearfix{
   background-color: rgb(250,250,250);
@@ -56,64 +66,111 @@ header .clearfix .main .logo{
 }
 
 header .main .main-menu{
-  font-family: Arial, sans-serif;
+  
+  font-family: 'Noto Sans KR', 'sans-serif', 'Apple SD Gothic Neo', 'malgun gothic', '맑은 고딕', '돋움', 'dotum';
+
   display: flex;
   justify-content: center;
+
   position: relative;
-  left: 200px;
+  left: 270px;
+  width: 720px;
   top: 0;
   right: 0;
-  padding: 0;
-  width: 100%;
+  padding: 16px 0;
+  margin: 0;
   box-sizing: border-box;
   
 }
 
 header .main ul.main-menu li.item{
-  width: 188px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  flex-direction: column;
 }
 
 header .main ul.main-menu .item__name{
-  font-size: 18px;
+  
+  font-size: 17px;
+  letter-spacing: -0.9px;
   color: black;
   font-weight: 700;
-  padding: 14px 0px;
+  padding: auto;
   font-family: 'Noto Sans KR', 'sans-serif', 'Apple SD Gothic Neo', 'malgun gothic', '맑은 고딕', '돋움', 'dotum';
 }
 
 header .main div.language{
-  width: 194px;
-  height: 50px;
+  position: absolute;
+  left: 1100px;
+  width: 30px;
+  height: 30px;
   background-image: url("../images/main/leng_icon.png");
   background-repeat: no-repeat;
   background-position: center center;
-  margin-top: 16px;
+  background-size: cover;
+  margin-top:25px;
 
 
 }
-header .main .main-menu .item:hover .item__name{
+header .main .main-menu:hover .item .item__name{
+  color: rgb(2, 38, 88);
+  /* color: red; */
+  font-weight: 900;
+}
+
+header .main .main-menu .item .item__contents{
+  display: none;
+  background-color: rgb(241, 241, 241);
+  width: 1170px;
+  height: 170px;
+  position: absolute;
+  left: -285px;
+  top: 80px;
+  
+}
+
+header .main .main-menu:hover .item .item__contents{
+  display: block;
+}
+
+
+#header .main .main-menu .item .item__contents .content__menu{
+  position: absolute;
+  width: 720px;
+  height: 100%;
+  left: 285px;
+}
+
+header .main .main-menu .item .item__contents .content__menu .inner{
+  display: flex;
+}
+
+header .main .main-menu .item .item__contents .content__menu .inner > li{
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+header .main .main-menu .item .item__contents .content__menu .inner > li  ul{
+  display: flex;
+  height: 170px;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+header .main .main-menu .item .item__contents .content__menu .inner > li  ul li {
+  font-size: 15px;
+}
+
+header .main .main-menu .item .item__contents .content__menu .inner > li  ul li:hover{
   color: rgb(2, 38, 88);
   font-weight: 900;
 }
 
-#header .main .main-menu .item .item__contents{
-  display: none;
-  background-color: orange;
-  width: 1170px;
-  height: 200px;
-  position: absolute;
-  left: -230px;
-  top: 65px;
-  
-}
-#header .main .main-menu .item:hover .item__contents{
-  display: block;
-}
 
-ul{
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
+
+

@@ -1,6 +1,27 @@
 .swipe{
-  
-  height: 400px;
-  background-color: brown;
+  width: 1480px;
+  height: 600px;
+  background-image: url("../images/main/main_img_01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: auto;
 }
 
+.information{
+  background-color: rgb(242, 244, 247);
+  
+  height: 748px;
+  padding: 100px auto;
+  margin: auto;
+  
+  
+  position: relative;
+}
+
+.information h2{
+  position: absolute;
+  margin: 0;
+  top: 50px;
+  left: 273px;
+}
